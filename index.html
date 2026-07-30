@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lahza-beta</title>
+
+    <meta name="С днем рождения" content="Мисс Малика">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Звёздное небо -->
+    <div id="stars"></div>
+    <div id="shooting-stars"></div>
+    <div id="particles"></div>
+
+    <!-- Первый экран -->
+    <div class="overlay">
+
+        <h1>
+         Здравствуйте<br>
+         Малика Мухитдиновна<br>
+         Песню можно выкл с кнопкой в правом углу  
+        </h1>
+
+        <button id="openLetter" type="button">
+            Письмо для вас, нажмите        </button>
+
+    </div>
+
+    <!-- Конверт -->
+    <div id="envelopeScene">
+
+        <div class="glow"></div>
+
+        <div class="envelope">
+
+            <div class="back"></div>
+
+            <div class="flap"></div>
+
+            <div class="front"></div>
+
+        </div>
+
+        <!-- Письмо -->
+        <div class="letter">
+
+            <div class="paper-content">
+
+                <h2 id="title"></h2>
+
+                <div id="letterText"></div>
+                <!-- Галерея -->
+<div id="photoGallery" class="photo-gallery">
+
+    <img src="images/photo1.jpg" class="memory-photo">
+    <img src="images/photo2.jpg" class="memory-photo">
+    <img src="images/photo3.jpg" class="memory-photo">
+
+</div>
+
+                <button id="finishBtn" type="button">
+                    Нажмите меня ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Финальный экран -->
+    <div id="finalScreen">
+
+        <div class="finalBox">
+
+            <h2>
+                Некоторые письма заканчиваются.    <br>
+                А воспоминания — остаются.
+            </h2>
+
+            <p id="finalText"></p>
+
+        </div>
+
+    </div>
+
+    <!-- Музыка -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Кнопка управления музыкой -->
+    <button id="musicBtn" type="button">
+        🔇
+    </button>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
